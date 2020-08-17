@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		560A992E6ADE8231A5C9D20B /* Pods_MSAdSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78490591B563EA9C0DCA3F9E /* Pods_MSAdSDK_Example.framework */; };
+		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
+		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
+		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		6003F59E195388D20070C39A /* MSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* MSAppDelegate.m */; };
+		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		C44424E024E280230041CA8D /* LaunchScreenLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C44424DF24E280230041CA8D /* LaunchScreenLogo.png */; };
+		C4E54D5824E276FB00165258 /* BDIdProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D0A24E276FB00165258 /* BDIdProvider.m */; };
+		C4E54D5924E276FB00165258 /* IAdIdProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D0B24E276FB00165258 /* IAdIdProvider.m */; };
+		C4E54D5A24E276FB00165258 /* DNAdIdProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D0C24E276FB00165258 /* DNAdIdProvider.m */; };
+		C4E54D5B24E276FB00165258 /* MSIdProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D0D24E276FB00165258 /* MSIdProvider.m */; };
+		C4E54D5C24E276FB00165258 /* IdProviderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D1524E276FB00165258 /* IdProviderFactory.m */; };
+		C4E54D5D24E276FB00165258 /* GDTIdProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D1624E276FB00165258 /* GDTIdProvider.m */; };
+		C4E54D5E24E276FB00165258 /* BUIdProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D1724E276FB00165258 /* BUIdProvider.m */; };
+		C4E54D5F24E276FB00165258 /* MSDefaultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D1924E276FB00165258 /* MSDefaultSet.m */; };
+		C4E54D6024E276FB00165258 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D1C24E276FB00165258 /* HomeViewController.m */; };
+		C4E54D6124E276FB00165258 /* MSBaseAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D1E24E276FB00165258 /* MSBaseAdViewController.m */; };
+		C4E54D6224E276FB00165258 /* MSInterstitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E54D2024E276FB00165258 /* MSInterstitialViewController.xib */; };
+		C4E54D6324E276FB00165258 /* MSInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D2224E276FB00165258 /* MSInterstitialViewController.m */; };
+		C4E54D6424E276FB00165258 /* MSRewardVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D2424E276FB00165258 /* MSRewardVideoViewController.m */; };
+		C4E54D6524E276FB00165258 /* MSRewardVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E54D2524E276FB00165258 /* MSRewardVideoViewController.xib */; };
+		C4E54D6624E276FB00165258 /* MSFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D2924E276FB00165258 /* MSFeedViewController.m */; };
+		C4E54D6724E276FB00165258 /* MSFeedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D2B24E276FB00165258 /* MSFeedListViewController.m */; };
+		C4E54D6824E276FB00165258 /* FeedVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D2D24E276FB00165258 /* FeedVideoView.m */; };
+		C4E54D6924E276FB00165258 /* MSVideoAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D3024E276FB00165258 /* MSVideoAdViewController.m */; };
+		C4E54D6A24E276FB00165258 /* MSVideoAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E54D3124E276FB00165258 /* MSVideoAdViewController.xib */; };
+		C4E54D6B24E276FB00165258 /* MSPrerenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D3524E276FB00165258 /* MSPrerenderCell.m */; };
+		C4E54D6C24E276FB00165258 /* MSPreRenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E54D3724E276FB00165258 /* MSPreRenderViewController.xib */; };
+		C4E54D6D24E276FB00165258 /* MSPreRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D3824E276FB00165258 /* MSPreRenderViewController.m */; };
+		C4E54D6E24E276FB00165258 /* MSBannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E54D3B24E276FB00165258 /* MSBannerViewController.xib */; };
+		C4E54D6F24E276FB00165258 /* MSBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D3C24E276FB00165258 /* MSBannerViewController.m */; };
+		C4E54D7024E276FB00165258 /* MSSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D3E24E276FB00165258 /* MSSplashViewController.m */; };
+		C4E54D7124E276FB00165258 /* MSSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E54D3F24E276FB00165258 /* MSSplashViewController.xib */; };
+		C4E54D7224E276FB00165258 /* MSModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D4224E276FB00165258 /* MSModuleViewController.m */; };
+		C4E54D7324E276FB00165258 /* DNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D4524E276FB00165258 /* DNViewController.m */; };
+		C4E54D7424E276FB00165258 /* MSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D4724E276FB00165258 /* MSViewController.m */; };
+		C4E54D7524E276FB00165258 /* BDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D4B24E276FB00165258 /* BDViewController.m */; };
+		C4E54D7624E276FB00165258 /* GDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D4E24E276FB00165258 /* GDTViewController.m */; };
+		C4E54D7724E276FB00165258 /* BUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D5124E276FB00165258 /* BUViewController.m */; };
+		C4E54D7824E276FB00165258 /* MSDemoSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D5324E276FB00165258 /* MSDemoSplashViewController.m */; };
+		C4E54D7924E276FB00165258 /* MSPidModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D5624E276FB00165258 /* MSPidModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B8A64E5423569EBD618FCAE /* Pods-MSAdSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSAdSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-MSAdSDK_Example/Pods-MSAdSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1EC3F22E580E3D966FDA950F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		25F80538578E44CA37ADDF85 /* MSAdSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MSAdSDK.podspec; path = ../MSAdSDK.podspec; sourceTree = "<group>"; };
+		499A5AD24DE9B7933490D0DF /* Pods-MSAdSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSAdSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-MSAdSDK_Example/Pods-MSAdSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* MSAdSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSAdSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F595195388D20070C39A /* MSAdSDK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MSAdSDK-Info.plist"; sourceTree = "<group>"; };
+		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* MSAdSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSAdSDK-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* MSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* MSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAppDelegate.m; sourceTree = "<group>"; };
+		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78490591B563EA9C0DCA3F9E /* Pods_MSAdSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSAdSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C44424DF24E280230041CA8D /* LaunchScreenLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenLogo.png; sourceTree = "<group>"; };
+		C4E54D0A24E276FB00165258 /* BDIdProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDIdProvider.m; sourceTree = "<group>"; };
+		C4E54D0B24E276FB00165258 /* IAdIdProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAdIdProvider.m; sourceTree = "<group>"; };
+		C4E54D0C24E276FB00165258 /* DNAdIdProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAdIdProvider.m; sourceTree = "<group>"; };
+		C4E54D0D24E276FB00165258 /* MSIdProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSIdProvider.m; sourceTree = "<group>"; };
+		C4E54D0E24E276FB00165258 /* GDTIdProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTIdProvider.h; sourceTree = "<group>"; };
+		C4E54D0F24E276FB00165258 /* IdProviderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdProviderFactory.h; sourceTree = "<group>"; };
+		C4E54D1024E276FB00165258 /* BUIdProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUIdProvider.h; sourceTree = "<group>"; };
+		C4E54D1124E276FB00165258 /* IAdIdProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAdIdProvider.h; sourceTree = "<group>"; };
+		C4E54D1224E276FB00165258 /* BDIdProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDIdProvider.h; sourceTree = "<group>"; };
+		C4E54D1324E276FB00165258 /* MSIdProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSIdProvider.h; sourceTree = "<group>"; };
+		C4E54D1424E276FB00165258 /* DNAdIdProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAdIdProvider.h; sourceTree = "<group>"; };
+		C4E54D1524E276FB00165258 /* IdProviderFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdProviderFactory.m; sourceTree = "<group>"; };
+		C4E54D1624E276FB00165258 /* GDTIdProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDTIdProvider.m; sourceTree = "<group>"; };
+		C4E54D1724E276FB00165258 /* BUIdProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUIdProvider.m; sourceTree = "<group>"; };
+		C4E54D1924E276FB00165258 /* MSDefaultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDefaultSet.m; sourceTree = "<group>"; };
+		C4E54D1A24E276FB00165258 /* MSDefaultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDefaultSet.h; sourceTree = "<group>"; };
+		C4E54D1C24E276FB00165258 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C4E54D1E24E276FB00165258 /* MSBaseAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBaseAdViewController.m; sourceTree = "<group>"; };
+		C4E54D2024E276FB00165258 /* MSInterstitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSInterstitialViewController.xib; sourceTree = "<group>"; };
+		C4E54D2124E276FB00165258 /* MSInterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSInterstitialViewController.h; sourceTree = "<group>"; };
+		C4E54D2224E276FB00165258 /* MSInterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSInterstitialViewController.m; sourceTree = "<group>"; };
+		C4E54D2424E276FB00165258 /* MSRewardVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRewardVideoViewController.m; sourceTree = "<group>"; };
+		C4E54D2524E276FB00165258 /* MSRewardVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSRewardVideoViewController.xib; sourceTree = "<group>"; };
+		C4E54D2624E276FB00165258 /* MSRewardVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRewardVideoViewController.h; sourceTree = "<group>"; };
+		C4E54D2724E276FB00165258 /* MSBaseAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBaseAdViewController.h; sourceTree = "<group>"; };
+		C4E54D2924E276FB00165258 /* MSFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSFeedViewController.m; sourceTree = "<group>"; };
+		C4E54D2A24E276FB00165258 /* FeedVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedVideoView.h; sourceTree = "<group>"; };
+		C4E54D2B24E276FB00165258 /* MSFeedListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSFeedListViewController.m; sourceTree = "<group>"; };
+		C4E54D2C24E276FB00165258 /* MSFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSFeedViewController.h; sourceTree = "<group>"; };
+		C4E54D2D24E276FB00165258 /* FeedVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedVideoView.m; sourceTree = "<group>"; };
+		C4E54D2E24E276FB00165258 /* MSFeedListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSFeedListViewController.h; sourceTree = "<group>"; };
+		C4E54D3024E276FB00165258 /* MSVideoAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSVideoAdViewController.m; sourceTree = "<group>"; };
+		C4E54D3124E276FB00165258 /* MSVideoAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSVideoAdViewController.xib; sourceTree = "<group>"; };
+		C4E54D3224E276FB00165258 /* MSVideoAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSVideoAdViewController.h; sourceTree = "<group>"; };
+		C4E54D3424E276FB00165258 /* MSPreRenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPreRenderViewController.h; sourceTree = "<group>"; };
+		C4E54D3524E276FB00165258 /* MSPrerenderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPrerenderCell.m; sourceTree = "<group>"; };
+		C4E54D3624E276FB00165258 /* MSPrerenderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPrerenderCell.h; sourceTree = "<group>"; };
+		C4E54D3724E276FB00165258 /* MSPreRenderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSPreRenderViewController.xib; sourceTree = "<group>"; };
+		C4E54D3824E276FB00165258 /* MSPreRenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPreRenderViewController.m; sourceTree = "<group>"; };
+		C4E54D3A24E276FB00165258 /* MSBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBannerViewController.h; sourceTree = "<group>"; };
+		C4E54D3B24E276FB00165258 /* MSBannerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSBannerViewController.xib; sourceTree = "<group>"; };
+		C4E54D3C24E276FB00165258 /* MSBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBannerViewController.m; sourceTree = "<group>"; };
+		C4E54D3E24E276FB00165258 /* MSSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSplashViewController.m; sourceTree = "<group>"; };
+		C4E54D3F24E276FB00165258 /* MSSplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSSplashViewController.xib; sourceTree = "<group>"; };
+		C4E54D4024E276FB00165258 /* MSSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSplashViewController.h; sourceTree = "<group>"; };
+		C4E54D4224E276FB00165258 /* MSModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSModuleViewController.m; sourceTree = "<group>"; };
+		C4E54D4424E276FB00165258 /* DNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNViewController.h; sourceTree = "<group>"; };
+		C4E54D4524E276FB00165258 /* DNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNViewController.m; sourceTree = "<group>"; };
+		C4E54D4724E276FB00165258 /* MSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSViewController.m; sourceTree = "<group>"; };
+		C4E54D4824E276FB00165258 /* MSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSViewController.h; sourceTree = "<group>"; };
+		C4E54D4A24E276FB00165258 /* BDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDViewController.h; sourceTree = "<group>"; };
+		C4E54D4B24E276FB00165258 /* BDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDViewController.m; sourceTree = "<group>"; };
+		C4E54D4C24E276FB00165258 /* MSModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSModuleViewController.h; sourceTree = "<group>"; };
+		C4E54D4E24E276FB00165258 /* GDTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDTViewController.m; sourceTree = "<group>"; };
+		C4E54D4F24E276FB00165258 /* GDTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTViewController.h; sourceTree = "<group>"; };
+		C4E54D5124E276FB00165258 /* BUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUViewController.m; sourceTree = "<group>"; };
+		C4E54D5224E276FB00165258 /* BUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUViewController.h; sourceTree = "<group>"; };
+		C4E54D5324E276FB00165258 /* MSDemoSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDemoSplashViewController.m; sourceTree = "<group>"; };
+		C4E54D5424E276FB00165258 /* MSPidModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPidModel.h; sourceTree = "<group>"; };
+		C4E54D5524E276FB00165258 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C4E54D5624E276FB00165258 /* MSPidModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPidModel.m; sourceTree = "<group>"; };
+		C4E54D5724E276FB00165258 /* MSDemoSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDemoSplashViewController.h; sourceTree = "<group>"; };
+		D7751255F5590EB4F0B7553B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6003F587195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				560A992E6ADE8231A5C9D20B /* Pods_MSAdSDK_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AAFF66AF984D78051D46FE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				499A5AD24DE9B7933490D0DF /* Pods-MSAdSDK_Example.debug.xcconfig */,
+				1B8A64E5423569EBD618FCAE /* Pods-MSAdSDK_Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6003F581195388D10070C39A = {
+			isa = PBXGroup;
+			children = (
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6003F593195388D20070C39A /* Example for MSAdSDK */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				2AAFF66AF984D78051D46FE7 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6003F58B195388D20070C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58A195388D20070C39A /* MSAdSDK_Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+				78490591B563EA9C0DCA3F9E /* Pods_MSAdSDK_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F593195388D20070C39A /* Example for MSAdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D0824E276FB00165258 /* Classes */,
+				6003F59C195388D20070C39A /* MSAppDelegate.h */,
+				6003F59D195388D20070C39A /* MSAppDelegate.m */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				C44424DF24E280230041CA8D /* LaunchScreenLogo.png */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6003F594195388D20070C39A /* Supporting Files */,
+			);
+			name = "Example for MSAdSDK";
+			path = MSAdSDK;
+			sourceTree = "<group>";
+		};
+		6003F594195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F595195388D20070C39A /* MSAdSDK-Info.plist */,
+				6003F596195388D20070C39A /* InfoPlist.strings */,
+				6003F599195388D20070C39A /* main.m */,
+				6003F59B195388D20070C39A /* MSAdSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				25F80538578E44CA37ADDF85 /* MSAdSDK.podspec */,
+				D7751255F5590EB4F0B7553B /* README.md */,
+				1EC3F22E580E3D966FDA950F /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		C4E54D0824E276FB00165258 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D0924E276FB00165258 /* Adid */,
+				C4E54D1824E276FB00165258 /* Common */,
+				C4E54D1B24E276FB00165258 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C4E54D0924E276FB00165258 /* Adid */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D0A24E276FB00165258 /* BDIdProvider.m */,
+				C4E54D0B24E276FB00165258 /* IAdIdProvider.m */,
+				C4E54D0C24E276FB00165258 /* DNAdIdProvider.m */,
+				C4E54D0D24E276FB00165258 /* MSIdProvider.m */,
+				C4E54D0E24E276FB00165258 /* GDTIdProvider.h */,
+				C4E54D0F24E276FB00165258 /* IdProviderFactory.h */,
+				C4E54D1024E276FB00165258 /* BUIdProvider.h */,
+				C4E54D1124E276FB00165258 /* IAdIdProvider.h */,
+				C4E54D1224E276FB00165258 /* BDIdProvider.h */,
+				C4E54D1324E276FB00165258 /* MSIdProvider.h */,
+				C4E54D1424E276FB00165258 /* DNAdIdProvider.h */,
+				C4E54D1524E276FB00165258 /* IdProviderFactory.m */,
+				C4E54D1624E276FB00165258 /* GDTIdProvider.m */,
+				C4E54D1724E276FB00165258 /* BUIdProvider.m */,
+			);
+			path = Adid;
+			sourceTree = "<group>";
+		};
+		C4E54D1824E276FB00165258 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D1924E276FB00165258 /* MSDefaultSet.m */,
+				C4E54D1A24E276FB00165258 /* MSDefaultSet.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C4E54D1B24E276FB00165258 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D1C24E276FB00165258 /* HomeViewController.m */,
+				C4E54D1D24E276FB00165258 /* Module */,
+				C4E54D4124E276FB00165258 /* Platform */,
+				C4E54D5324E276FB00165258 /* MSDemoSplashViewController.m */,
+				C4E54D5424E276FB00165258 /* MSPidModel.h */,
+				C4E54D5524E276FB00165258 /* HomeViewController.h */,
+				C4E54D5624E276FB00165258 /* MSPidModel.m */,
+				C4E54D5724E276FB00165258 /* MSDemoSplashViewController.h */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C4E54D1D24E276FB00165258 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D2724E276FB00165258 /* MSBaseAdViewController.h */,
+				C4E54D1E24E276FB00165258 /* MSBaseAdViewController.m */,
+				C4E54D3924E276FB00165258 /* Banner */,
+				C4E54D2824E276FB00165258 /* Feed */,
+				C4E54D1F24E276FB00165258 /* Interstitial */,
+				C4E54D3324E276FB00165258 /* PreRender */,
+				C4E54D2324E276FB00165258 /* RewardViedeo */,
+				C4E54D3D24E276FB00165258 /* Spalsh */,
+				C4E54D2F24E276FB00165258 /* VideoAd */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		C4E54D1F24E276FB00165258 /* Interstitial */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D2024E276FB00165258 /* MSInterstitialViewController.xib */,
+				C4E54D2124E276FB00165258 /* MSInterstitialViewController.h */,
+				C4E54D2224E276FB00165258 /* MSInterstitialViewController.m */,
+			);
+			path = Interstitial;
+			sourceTree = "<group>";
+		};
+		C4E54D2324E276FB00165258 /* RewardViedeo */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D2424E276FB00165258 /* MSRewardVideoViewController.m */,
+				C4E54D2524E276FB00165258 /* MSRewardVideoViewController.xib */,
+				C4E54D2624E276FB00165258 /* MSRewardVideoViewController.h */,
+			);
+			path = RewardViedeo;
+			sourceTree = "<group>";
+		};
+		C4E54D2824E276FB00165258 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D2924E276FB00165258 /* MSFeedViewController.m */,
+				C4E54D2A24E276FB00165258 /* FeedVideoView.h */,
+				C4E54D2B24E276FB00165258 /* MSFeedListViewController.m */,
+				C4E54D2C24E276FB00165258 /* MSFeedViewController.h */,
+				C4E54D2D24E276FB00165258 /* FeedVideoView.m */,
+				C4E54D2E24E276FB00165258 /* MSFeedListViewController.h */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		C4E54D2F24E276FB00165258 /* VideoAd */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D3024E276FB00165258 /* MSVideoAdViewController.m */,
+				C4E54D3124E276FB00165258 /* MSVideoAdViewController.xib */,
+				C4E54D3224E276FB00165258 /* MSVideoAdViewController.h */,
+			);
+			path = VideoAd;
+			sourceTree = "<group>";
+		};
+		C4E54D3324E276FB00165258 /* PreRender */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D3424E276FB00165258 /* MSPreRenderViewController.h */,
+				C4E54D3524E276FB00165258 /* MSPrerenderCell.m */,
+				C4E54D3624E276FB00165258 /* MSPrerenderCell.h */,
+				C4E54D3724E276FB00165258 /* MSPreRenderViewController.xib */,
+				C4E54D3824E276FB00165258 /* MSPreRenderViewController.m */,
+			);
+			path = PreRender;
+			sourceTree = "<group>";
+		};
+		C4E54D3924E276FB00165258 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D3A24E276FB00165258 /* MSBannerViewController.h */,
+				C4E54D3B24E276FB00165258 /* MSBannerViewController.xib */,
+				C4E54D3C24E276FB00165258 /* MSBannerViewController.m */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		C4E54D3D24E276FB00165258 /* Spalsh */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D3E24E276FB00165258 /* MSSplashViewController.m */,
+				C4E54D3F24E276FB00165258 /* MSSplashViewController.xib */,
+				C4E54D4024E276FB00165258 /* MSSplashViewController.h */,
+			);
+			path = Spalsh;
+			sourceTree = "<group>";
+		};
+		C4E54D4124E276FB00165258 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D4C24E276FB00165258 /* MSModuleViewController.h */,
+				C4E54D4224E276FB00165258 /* MSModuleViewController.m */,
+				C4E54D4924E276FB00165258 /* BD */,
+				C4E54D5024E276FB00165258 /* BU */,
+				C4E54D4324E276FB00165258 /* DN */,
+				C4E54D4D24E276FB00165258 /* GDT */,
+				C4E54D4624E276FB00165258 /* MS */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		C4E54D4324E276FB00165258 /* DN */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D4424E276FB00165258 /* DNViewController.h */,
+				C4E54D4524E276FB00165258 /* DNViewController.m */,
+			);
+			path = DN;
+			sourceTree = "<group>";
+		};
+		C4E54D4624E276FB00165258 /* MS */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D4724E276FB00165258 /* MSViewController.m */,
+				C4E54D4824E276FB00165258 /* MSViewController.h */,
+			);
+			path = MS;
+			sourceTree = "<group>";
+		};
+		C4E54D4924E276FB00165258 /* BD */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D4A24E276FB00165258 /* BDViewController.h */,
+				C4E54D4B24E276FB00165258 /* BDViewController.m */,
+			);
+			path = BD;
+			sourceTree = "<group>";
+		};
+		C4E54D4D24E276FB00165258 /* GDT */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D4E24E276FB00165258 /* GDTViewController.m */,
+				C4E54D4F24E276FB00165258 /* GDTViewController.h */,
+			);
+			path = GDT;
+			sourceTree = "<group>";
+		};
+		C4E54D5024E276FB00165258 /* BU */ = {
+			isa = PBXGroup;
+			children = (
+				C4E54D5124E276FB00165258 /* BUViewController.m */,
+				C4E54D5224E276FB00165258 /* BUViewController.h */,
+			);
+			path = BU;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6003F589195388D20070C39A /* MSAdSDK_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "MSAdSDK_Example" */;
+			buildPhases = (
+				77E8C4A9805B20197B96E37C /* [CP] Check Pods Manifest.lock */,
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+				7A8CA849D0451CCA35DC2B15 /* [CP] Embed Pods Frameworks */,
+				FEFBB5FF98076DB3A456DDA5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSAdSDK_Example;
+			productName = MSAdSDK;
+			productReference = 6003F58A195388D20070C39A /* MSAdSDK_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003F582195388D10070C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MS;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = Liumao;
+			};
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "MSAdSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003F589195388D20070C39A /* MSAdSDK_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6003F588195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				C44424E024E280230041CA8D /* LaunchScreenLogo.png in Resources */,
+				C4E54D7124E276FB00165258 /* MSSplashViewController.xib in Resources */,
+				C4E54D6E24E276FB00165258 /* MSBannerViewController.xib in Resources */,
+				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				C4E54D6224E276FB00165258 /* MSInterstitialViewController.xib in Resources */,
+				C4E54D6524E276FB00165258 /* MSRewardVideoViewController.xib in Resources */,
+				C4E54D6C24E276FB00165258 /* MSPreRenderViewController.xib in Resources */,
+				C4E54D6A24E276FB00165258 /* MSVideoAdViewController.xib in Resources */,
+				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77E8C4A9805B20197B96E37C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MSAdSDK_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A8CA849D0451CCA35DC2B15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MSAdSDK_Example/Pods-MSAdSDK_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MSAdSDK_Example/Pods-MSAdSDK_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEFBB5FF98076DB3A456DDA5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MSAdSDK_Example/Pods-MSAdSDK_Example-resources.sh",
+				"${PODS_ROOT}/../../MSAdSDK/Libs/MSAdBundle.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MSAdBundle.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MSAdSDK_Example/Pods-MSAdSDK_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6003F586195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4E54D7524E276FB00165258 /* BDViewController.m in Sources */,
+				C4E54D7224E276FB00165258 /* MSModuleViewController.m in Sources */,
+				C4E54D6D24E276FB00165258 /* MSPreRenderViewController.m in Sources */,
+				C4E54D5B24E276FB00165258 /* MSIdProvider.m in Sources */,
+				C4E54D7024E276FB00165258 /* MSSplashViewController.m in Sources */,
+				C4E54D6124E276FB00165258 /* MSBaseAdViewController.m in Sources */,
+				6003F59E195388D20070C39A /* MSAppDelegate.m in Sources */,
+				C4E54D5924E276FB00165258 /* IAdIdProvider.m in Sources */,
+				C4E54D7724E276FB00165258 /* BUViewController.m in Sources */,
+				C4E54D7924E276FB00165258 /* MSPidModel.m in Sources */,
+				C4E54D6624E276FB00165258 /* MSFeedViewController.m in Sources */,
+				C4E54D7424E276FB00165258 /* MSViewController.m in Sources */,
+				C4E54D6924E276FB00165258 /* MSVideoAdViewController.m in Sources */,
+				C4E54D7824E276FB00165258 /* MSDemoSplashViewController.m in Sources */,
+				C4E54D5D24E276FB00165258 /* GDTIdProvider.m in Sources */,
+				6003F59A195388D20070C39A /* main.m in Sources */,
+				C4E54D5E24E276FB00165258 /* BUIdProvider.m in Sources */,
+				C4E54D5A24E276FB00165258 /* DNAdIdProvider.m in Sources */,
+				C4E54D7624E276FB00165258 /* GDTViewController.m in Sources */,
+				C4E54D6824E276FB00165258 /* FeedVideoView.m in Sources */,
+				C4E54D5C24E276FB00165258 /* IdProviderFactory.m in Sources */,
+				C4E54D6F24E276FB00165258 /* MSBannerViewController.m in Sources */,
+				C4E54D6424E276FB00165258 /* MSRewardVideoViewController.m in Sources */,
+				C4E54D7324E276FB00165258 /* DNViewController.m in Sources */,
+				C4E54D6724E276FB00165258 /* MSFeedListViewController.m in Sources */,
+				C4E54D5F24E276FB00165258 /* MSDefaultSet.m in Sources */,
+				C4E54D5824E276FB00165258 /* BDIdProvider.m in Sources */,
+				C4E54D6324E276FB00165258 /* MSInterstitialViewController.m in Sources */,
+				C4E54D6024E276FB00165258 /* HomeViewController.m in Sources */,
+				C4E54D6B24E276FB00165258 /* MSPrerenderCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F597195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71719F9E1E33DC2100824A3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6003F5BD195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003F5BE195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003F5C0195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 499A5AD24DE9B7933490D0DF /* Pods-MSAdSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MSAdSDK/MSAdSDK-Prefix.pch";
+				INFOPLIST_FILE = "MSAdSDK/MSAdSDK-Info.plist";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003F5C1195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B8A64E5423569EBD618FCAE /* Pods-MSAdSDK_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MSAdSDK/MSAdSDK-Prefix.pch";
+				INFOPLIST_FILE = "MSAdSDK/MSAdSDK-Info.plist";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "MSAdSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "MSAdSDK_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C0195388D20070C39A /* Debug */,
+				6003F5C1195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003F582195388D10070C39A /* Project object */;
+}
