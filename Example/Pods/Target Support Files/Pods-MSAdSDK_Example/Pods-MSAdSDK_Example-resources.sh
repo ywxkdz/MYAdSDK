@@ -97,10 +97,10 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_ROOT}/../../MSAdSDK/Libs/MSAdBundle.bundle"
+  install_resource "${PODS_ROOT}/MYAdSDK/MSAdSDK/Libs/MSAdBundle.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/../../MSAdSDK/Libs/MSAdBundle.bundle"
+  install_resource "${PODS_ROOT}/MYAdSDK/MSAdSDK/Libs/MSAdBundle.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

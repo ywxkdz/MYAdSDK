@@ -1,0 +1,6 @@
+framework module MYAdSDKDemo {
+  umbrella header "MYAdSDKDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

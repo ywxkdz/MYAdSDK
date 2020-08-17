@@ -18,40 +18,6 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		C44424E024E280230041CA8D /* LaunchScreenLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C44424DF24E280230041CA8D /* LaunchScreenLogo.png */; };
-		C4E54D5824E276FB00165258 /* BDIdProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D0A24E276FB00165258 /* BDIdProvider.m */; };
-		C4E54D5924E276FB00165258 /* IAdIdProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D0B24E276FB00165258 /* IAdIdProvider.m */; };
-		C4E54D5A24E276FB00165258 /* DNAdIdProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D0C24E276FB00165258 /* DNAdIdProvider.m */; };
-		C4E54D5B24E276FB00165258 /* MSIdProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D0D24E276FB00165258 /* MSIdProvider.m */; };
-		C4E54D5C24E276FB00165258 /* IdProviderFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D1524E276FB00165258 /* IdProviderFactory.m */; };
-		C4E54D5D24E276FB00165258 /* GDTIdProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D1624E276FB00165258 /* GDTIdProvider.m */; };
-		C4E54D5E24E276FB00165258 /* BUIdProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D1724E276FB00165258 /* BUIdProvider.m */; };
-		C4E54D5F24E276FB00165258 /* MSDefaultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D1924E276FB00165258 /* MSDefaultSet.m */; };
-		C4E54D6024E276FB00165258 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D1C24E276FB00165258 /* HomeViewController.m */; };
-		C4E54D6124E276FB00165258 /* MSBaseAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D1E24E276FB00165258 /* MSBaseAdViewController.m */; };
-		C4E54D6224E276FB00165258 /* MSInterstitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E54D2024E276FB00165258 /* MSInterstitialViewController.xib */; };
-		C4E54D6324E276FB00165258 /* MSInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D2224E276FB00165258 /* MSInterstitialViewController.m */; };
-		C4E54D6424E276FB00165258 /* MSRewardVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D2424E276FB00165258 /* MSRewardVideoViewController.m */; };
-		C4E54D6524E276FB00165258 /* MSRewardVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E54D2524E276FB00165258 /* MSRewardVideoViewController.xib */; };
-		C4E54D6624E276FB00165258 /* MSFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D2924E276FB00165258 /* MSFeedViewController.m */; };
-		C4E54D6724E276FB00165258 /* MSFeedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D2B24E276FB00165258 /* MSFeedListViewController.m */; };
-		C4E54D6824E276FB00165258 /* FeedVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D2D24E276FB00165258 /* FeedVideoView.m */; };
-		C4E54D6924E276FB00165258 /* MSVideoAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D3024E276FB00165258 /* MSVideoAdViewController.m */; };
-		C4E54D6A24E276FB00165258 /* MSVideoAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E54D3124E276FB00165258 /* MSVideoAdViewController.xib */; };
-		C4E54D6B24E276FB00165258 /* MSPrerenderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D3524E276FB00165258 /* MSPrerenderCell.m */; };
-		C4E54D6C24E276FB00165258 /* MSPreRenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E54D3724E276FB00165258 /* MSPreRenderViewController.xib */; };
-		C4E54D6D24E276FB00165258 /* MSPreRenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D3824E276FB00165258 /* MSPreRenderViewController.m */; };
-		C4E54D6E24E276FB00165258 /* MSBannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E54D3B24E276FB00165258 /* MSBannerViewController.xib */; };
-		C4E54D6F24E276FB00165258 /* MSBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D3C24E276FB00165258 /* MSBannerViewController.m */; };
-		C4E54D7024E276FB00165258 /* MSSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D3E24E276FB00165258 /* MSSplashViewController.m */; };
-		C4E54D7124E276FB00165258 /* MSSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E54D3F24E276FB00165258 /* MSSplashViewController.xib */; };
-		C4E54D7224E276FB00165258 /* MSModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D4224E276FB00165258 /* MSModuleViewController.m */; };
-		C4E54D7324E276FB00165258 /* DNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D4524E276FB00165258 /* DNViewController.m */; };
-		C4E54D7424E276FB00165258 /* MSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D4724E276FB00165258 /* MSViewController.m */; };
-		C4E54D7524E276FB00165258 /* BDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D4B24E276FB00165258 /* BDViewController.m */; };
-		C4E54D7624E276FB00165258 /* GDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D4E24E276FB00165258 /* GDTViewController.m */; };
-		C4E54D7724E276FB00165258 /* BUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D5124E276FB00165258 /* BUViewController.m */; };
-		C4E54D7824E276FB00165258 /* MSDemoSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D5324E276FB00165258 /* MSDemoSplashViewController.m */; };
-		C4E54D7924E276FB00165258 /* MSPidModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E54D5624E276FB00165258 /* MSPidModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,68 +41,6 @@
 		78490591B563EA9C0DCA3F9E /* Pods_MSAdSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSAdSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C44424DF24E280230041CA8D /* LaunchScreenLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreenLogo.png; sourceTree = "<group>"; };
-		C4E54D0A24E276FB00165258 /* BDIdProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDIdProvider.m; sourceTree = "<group>"; };
-		C4E54D0B24E276FB00165258 /* IAdIdProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAdIdProvider.m; sourceTree = "<group>"; };
-		C4E54D0C24E276FB00165258 /* DNAdIdProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAdIdProvider.m; sourceTree = "<group>"; };
-		C4E54D0D24E276FB00165258 /* MSIdProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSIdProvider.m; sourceTree = "<group>"; };
-		C4E54D0E24E276FB00165258 /* GDTIdProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTIdProvider.h; sourceTree = "<group>"; };
-		C4E54D0F24E276FB00165258 /* IdProviderFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdProviderFactory.h; sourceTree = "<group>"; };
-		C4E54D1024E276FB00165258 /* BUIdProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUIdProvider.h; sourceTree = "<group>"; };
-		C4E54D1124E276FB00165258 /* IAdIdProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAdIdProvider.h; sourceTree = "<group>"; };
-		C4E54D1224E276FB00165258 /* BDIdProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDIdProvider.h; sourceTree = "<group>"; };
-		C4E54D1324E276FB00165258 /* MSIdProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSIdProvider.h; sourceTree = "<group>"; };
-		C4E54D1424E276FB00165258 /* DNAdIdProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAdIdProvider.h; sourceTree = "<group>"; };
-		C4E54D1524E276FB00165258 /* IdProviderFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdProviderFactory.m; sourceTree = "<group>"; };
-		C4E54D1624E276FB00165258 /* GDTIdProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDTIdProvider.m; sourceTree = "<group>"; };
-		C4E54D1724E276FB00165258 /* BUIdProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUIdProvider.m; sourceTree = "<group>"; };
-		C4E54D1924E276FB00165258 /* MSDefaultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDefaultSet.m; sourceTree = "<group>"; };
-		C4E54D1A24E276FB00165258 /* MSDefaultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDefaultSet.h; sourceTree = "<group>"; };
-		C4E54D1C24E276FB00165258 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		C4E54D1E24E276FB00165258 /* MSBaseAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBaseAdViewController.m; sourceTree = "<group>"; };
-		C4E54D2024E276FB00165258 /* MSInterstitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSInterstitialViewController.xib; sourceTree = "<group>"; };
-		C4E54D2124E276FB00165258 /* MSInterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSInterstitialViewController.h; sourceTree = "<group>"; };
-		C4E54D2224E276FB00165258 /* MSInterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSInterstitialViewController.m; sourceTree = "<group>"; };
-		C4E54D2424E276FB00165258 /* MSRewardVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRewardVideoViewController.m; sourceTree = "<group>"; };
-		C4E54D2524E276FB00165258 /* MSRewardVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSRewardVideoViewController.xib; sourceTree = "<group>"; };
-		C4E54D2624E276FB00165258 /* MSRewardVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRewardVideoViewController.h; sourceTree = "<group>"; };
-		C4E54D2724E276FB00165258 /* MSBaseAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBaseAdViewController.h; sourceTree = "<group>"; };
-		C4E54D2924E276FB00165258 /* MSFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSFeedViewController.m; sourceTree = "<group>"; };
-		C4E54D2A24E276FB00165258 /* FeedVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedVideoView.h; sourceTree = "<group>"; };
-		C4E54D2B24E276FB00165258 /* MSFeedListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSFeedListViewController.m; sourceTree = "<group>"; };
-		C4E54D2C24E276FB00165258 /* MSFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSFeedViewController.h; sourceTree = "<group>"; };
-		C4E54D2D24E276FB00165258 /* FeedVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedVideoView.m; sourceTree = "<group>"; };
-		C4E54D2E24E276FB00165258 /* MSFeedListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSFeedListViewController.h; sourceTree = "<group>"; };
-		C4E54D3024E276FB00165258 /* MSVideoAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSVideoAdViewController.m; sourceTree = "<group>"; };
-		C4E54D3124E276FB00165258 /* MSVideoAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSVideoAdViewController.xib; sourceTree = "<group>"; };
-		C4E54D3224E276FB00165258 /* MSVideoAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSVideoAdViewController.h; sourceTree = "<group>"; };
-		C4E54D3424E276FB00165258 /* MSPreRenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPreRenderViewController.h; sourceTree = "<group>"; };
-		C4E54D3524E276FB00165258 /* MSPrerenderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPrerenderCell.m; sourceTree = "<group>"; };
-		C4E54D3624E276FB00165258 /* MSPrerenderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPrerenderCell.h; sourceTree = "<group>"; };
-		C4E54D3724E276FB00165258 /* MSPreRenderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSPreRenderViewController.xib; sourceTree = "<group>"; };
-		C4E54D3824E276FB00165258 /* MSPreRenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPreRenderViewController.m; sourceTree = "<group>"; };
-		C4E54D3A24E276FB00165258 /* MSBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBannerViewController.h; sourceTree = "<group>"; };
-		C4E54D3B24E276FB00165258 /* MSBannerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSBannerViewController.xib; sourceTree = "<group>"; };
-		C4E54D3C24E276FB00165258 /* MSBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBannerViewController.m; sourceTree = "<group>"; };
-		C4E54D3E24E276FB00165258 /* MSSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSplashViewController.m; sourceTree = "<group>"; };
-		C4E54D3F24E276FB00165258 /* MSSplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSSplashViewController.xib; sourceTree = "<group>"; };
-		C4E54D4024E276FB00165258 /* MSSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSplashViewController.h; sourceTree = "<group>"; };
-		C4E54D4224E276FB00165258 /* MSModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSModuleViewController.m; sourceTree = "<group>"; };
-		C4E54D4424E276FB00165258 /* DNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNViewController.h; sourceTree = "<group>"; };
-		C4E54D4524E276FB00165258 /* DNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNViewController.m; sourceTree = "<group>"; };
-		C4E54D4724E276FB00165258 /* MSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSViewController.m; sourceTree = "<group>"; };
-		C4E54D4824E276FB00165258 /* MSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSViewController.h; sourceTree = "<group>"; };
-		C4E54D4A24E276FB00165258 /* BDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDViewController.h; sourceTree = "<group>"; };
-		C4E54D4B24E276FB00165258 /* BDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDViewController.m; sourceTree = "<group>"; };
-		C4E54D4C24E276FB00165258 /* MSModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSModuleViewController.h; sourceTree = "<group>"; };
-		C4E54D4E24E276FB00165258 /* GDTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDTViewController.m; sourceTree = "<group>"; };
-		C4E54D4F24E276FB00165258 /* GDTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTViewController.h; sourceTree = "<group>"; };
-		C4E54D5124E276FB00165258 /* BUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUViewController.m; sourceTree = "<group>"; };
-		C4E54D5224E276FB00165258 /* BUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUViewController.h; sourceTree = "<group>"; };
-		C4E54D5324E276FB00165258 /* MSDemoSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDemoSplashViewController.m; sourceTree = "<group>"; };
-		C4E54D5424E276FB00165258 /* MSPidModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPidModel.h; sourceTree = "<group>"; };
-		C4E54D5524E276FB00165258 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		C4E54D5624E276FB00165258 /* MSPidModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPidModel.m; sourceTree = "<group>"; };
-		C4E54D5724E276FB00165258 /* MSDemoSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDemoSplashViewController.h; sourceTree = "<group>"; };
 		D7751255F5590EB4F0B7553B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,7 +102,6 @@
 		6003F593195388D20070C39A /* Example for MSAdSDK */ = {
 			isa = PBXGroup;
 			children = (
-				C4E54D0824E276FB00165258 /* Classes */,
 				6003F59C195388D20070C39A /* MSAppDelegate.h */,
 				6003F59D195388D20070C39A /* MSAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -232,211 +135,6 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		C4E54D0824E276FB00165258 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D0924E276FB00165258 /* Adid */,
-				C4E54D1824E276FB00165258 /* Common */,
-				C4E54D1B24E276FB00165258 /* Main */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		C4E54D0924E276FB00165258 /* Adid */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D0A24E276FB00165258 /* BDIdProvider.m */,
-				C4E54D0B24E276FB00165258 /* IAdIdProvider.m */,
-				C4E54D0C24E276FB00165258 /* DNAdIdProvider.m */,
-				C4E54D0D24E276FB00165258 /* MSIdProvider.m */,
-				C4E54D0E24E276FB00165258 /* GDTIdProvider.h */,
-				C4E54D0F24E276FB00165258 /* IdProviderFactory.h */,
-				C4E54D1024E276FB00165258 /* BUIdProvider.h */,
-				C4E54D1124E276FB00165258 /* IAdIdProvider.h */,
-				C4E54D1224E276FB00165258 /* BDIdProvider.h */,
-				C4E54D1324E276FB00165258 /* MSIdProvider.h */,
-				C4E54D1424E276FB00165258 /* DNAdIdProvider.h */,
-				C4E54D1524E276FB00165258 /* IdProviderFactory.m */,
-				C4E54D1624E276FB00165258 /* GDTIdProvider.m */,
-				C4E54D1724E276FB00165258 /* BUIdProvider.m */,
-			);
-			path = Adid;
-			sourceTree = "<group>";
-		};
-		C4E54D1824E276FB00165258 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D1924E276FB00165258 /* MSDefaultSet.m */,
-				C4E54D1A24E276FB00165258 /* MSDefaultSet.h */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		C4E54D1B24E276FB00165258 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D1C24E276FB00165258 /* HomeViewController.m */,
-				C4E54D1D24E276FB00165258 /* Module */,
-				C4E54D4124E276FB00165258 /* Platform */,
-				C4E54D5324E276FB00165258 /* MSDemoSplashViewController.m */,
-				C4E54D5424E276FB00165258 /* MSPidModel.h */,
-				C4E54D5524E276FB00165258 /* HomeViewController.h */,
-				C4E54D5624E276FB00165258 /* MSPidModel.m */,
-				C4E54D5724E276FB00165258 /* MSDemoSplashViewController.h */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		C4E54D1D24E276FB00165258 /* Module */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D2724E276FB00165258 /* MSBaseAdViewController.h */,
-				C4E54D1E24E276FB00165258 /* MSBaseAdViewController.m */,
-				C4E54D3924E276FB00165258 /* Banner */,
-				C4E54D2824E276FB00165258 /* Feed */,
-				C4E54D1F24E276FB00165258 /* Interstitial */,
-				C4E54D3324E276FB00165258 /* PreRender */,
-				C4E54D2324E276FB00165258 /* RewardViedeo */,
-				C4E54D3D24E276FB00165258 /* Spalsh */,
-				C4E54D2F24E276FB00165258 /* VideoAd */,
-			);
-			path = Module;
-			sourceTree = "<group>";
-		};
-		C4E54D1F24E276FB00165258 /* Interstitial */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D2024E276FB00165258 /* MSInterstitialViewController.xib */,
-				C4E54D2124E276FB00165258 /* MSInterstitialViewController.h */,
-				C4E54D2224E276FB00165258 /* MSInterstitialViewController.m */,
-			);
-			path = Interstitial;
-			sourceTree = "<group>";
-		};
-		C4E54D2324E276FB00165258 /* RewardViedeo */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D2424E276FB00165258 /* MSRewardVideoViewController.m */,
-				C4E54D2524E276FB00165258 /* MSRewardVideoViewController.xib */,
-				C4E54D2624E276FB00165258 /* MSRewardVideoViewController.h */,
-			);
-			path = RewardViedeo;
-			sourceTree = "<group>";
-		};
-		C4E54D2824E276FB00165258 /* Feed */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D2924E276FB00165258 /* MSFeedViewController.m */,
-				C4E54D2A24E276FB00165258 /* FeedVideoView.h */,
-				C4E54D2B24E276FB00165258 /* MSFeedListViewController.m */,
-				C4E54D2C24E276FB00165258 /* MSFeedViewController.h */,
-				C4E54D2D24E276FB00165258 /* FeedVideoView.m */,
-				C4E54D2E24E276FB00165258 /* MSFeedListViewController.h */,
-			);
-			path = Feed;
-			sourceTree = "<group>";
-		};
-		C4E54D2F24E276FB00165258 /* VideoAd */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D3024E276FB00165258 /* MSVideoAdViewController.m */,
-				C4E54D3124E276FB00165258 /* MSVideoAdViewController.xib */,
-				C4E54D3224E276FB00165258 /* MSVideoAdViewController.h */,
-			);
-			path = VideoAd;
-			sourceTree = "<group>";
-		};
-		C4E54D3324E276FB00165258 /* PreRender */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D3424E276FB00165258 /* MSPreRenderViewController.h */,
-				C4E54D3524E276FB00165258 /* MSPrerenderCell.m */,
-				C4E54D3624E276FB00165258 /* MSPrerenderCell.h */,
-				C4E54D3724E276FB00165258 /* MSPreRenderViewController.xib */,
-				C4E54D3824E276FB00165258 /* MSPreRenderViewController.m */,
-			);
-			path = PreRender;
-			sourceTree = "<group>";
-		};
-		C4E54D3924E276FB00165258 /* Banner */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D3A24E276FB00165258 /* MSBannerViewController.h */,
-				C4E54D3B24E276FB00165258 /* MSBannerViewController.xib */,
-				C4E54D3C24E276FB00165258 /* MSBannerViewController.m */,
-			);
-			path = Banner;
-			sourceTree = "<group>";
-		};
-		C4E54D3D24E276FB00165258 /* Spalsh */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D3E24E276FB00165258 /* MSSplashViewController.m */,
-				C4E54D3F24E276FB00165258 /* MSSplashViewController.xib */,
-				C4E54D4024E276FB00165258 /* MSSplashViewController.h */,
-			);
-			path = Spalsh;
-			sourceTree = "<group>";
-		};
-		C4E54D4124E276FB00165258 /* Platform */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D4C24E276FB00165258 /* MSModuleViewController.h */,
-				C4E54D4224E276FB00165258 /* MSModuleViewController.m */,
-				C4E54D4924E276FB00165258 /* BD */,
-				C4E54D5024E276FB00165258 /* BU */,
-				C4E54D4324E276FB00165258 /* DN */,
-				C4E54D4D24E276FB00165258 /* GDT */,
-				C4E54D4624E276FB00165258 /* MS */,
-			);
-			path = Platform;
-			sourceTree = "<group>";
-		};
-		C4E54D4324E276FB00165258 /* DN */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D4424E276FB00165258 /* DNViewController.h */,
-				C4E54D4524E276FB00165258 /* DNViewController.m */,
-			);
-			path = DN;
-			sourceTree = "<group>";
-		};
-		C4E54D4624E276FB00165258 /* MS */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D4724E276FB00165258 /* MSViewController.m */,
-				C4E54D4824E276FB00165258 /* MSViewController.h */,
-			);
-			path = MS;
-			sourceTree = "<group>";
-		};
-		C4E54D4924E276FB00165258 /* BD */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D4A24E276FB00165258 /* BDViewController.h */,
-				C4E54D4B24E276FB00165258 /* BDViewController.m */,
-			);
-			path = BD;
-			sourceTree = "<group>";
-		};
-		C4E54D4D24E276FB00165258 /* GDT */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D4E24E276FB00165258 /* GDTViewController.m */,
-				C4E54D4F24E276FB00165258 /* GDTViewController.h */,
-			);
-			path = GDT;
-			sourceTree = "<group>";
-		};
-		C4E54D5024E276FB00165258 /* BU */ = {
-			isa = PBXGroup;
-			children = (
-				C4E54D5124E276FB00165258 /* BUViewController.m */,
-				C4E54D5224E276FB00165258 /* BUViewController.h */,
-			);
-			path = BU;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -448,8 +146,8 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				7A8CA849D0451CCA35DC2B15 /* [CP] Embed Pods Frameworks */,
-				FEFBB5FF98076DB3A456DDA5 /* [CP] Copy Pods Resources */,
+				14D1B22A5EC91208ECA71359 /* [CP] Embed Pods Frameworks */,
+				836B2B392B0F238CDD3585D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -496,13 +194,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				C44424E024E280230041CA8D /* LaunchScreenLogo.png in Resources */,
-				C4E54D7124E276FB00165258 /* MSSplashViewController.xib in Resources */,
-				C4E54D6E24E276FB00165258 /* MSBannerViewController.xib in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
-				C4E54D6224E276FB00165258 /* MSInterstitialViewController.xib in Resources */,
-				C4E54D6524E276FB00165258 /* MSRewardVideoViewController.xib in Resources */,
-				C4E54D6C24E276FB00165258 /* MSPreRenderViewController.xib in Resources */,
-				C4E54D6A24E276FB00165258 /* MSVideoAdViewController.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -511,6 +203,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		14D1B22A5EC91208ECA71359 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MSAdSDK_Example/Pods-MSAdSDK_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MSAdSDK_Example/Pods-MSAdSDK_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		77E8C4A9805B20197B96E37C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -533,32 +243,14 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7A8CA849D0451CCA35DC2B15 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MSAdSDK_Example/Pods-MSAdSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MSAdSDK_Example/Pods-MSAdSDK_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FEFBB5FF98076DB3A456DDA5 /* [CP] Copy Pods Resources */ = {
+		836B2B392B0F238CDD3585D9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MSAdSDK_Example/Pods-MSAdSDK_Example-resources.sh",
-				"${PODS_ROOT}/../../MSAdSDK/Libs/MSAdBundle.bundle",
+				"${PODS_ROOT}/MYAdSDK/MSAdSDK/Libs/MSAdBundle.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -576,36 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4E54D7524E276FB00165258 /* BDViewController.m in Sources */,
-				C4E54D7224E276FB00165258 /* MSModuleViewController.m in Sources */,
-				C4E54D6D24E276FB00165258 /* MSPreRenderViewController.m in Sources */,
-				C4E54D5B24E276FB00165258 /* MSIdProvider.m in Sources */,
-				C4E54D7024E276FB00165258 /* MSSplashViewController.m in Sources */,
-				C4E54D6124E276FB00165258 /* MSBaseAdViewController.m in Sources */,
 				6003F59E195388D20070C39A /* MSAppDelegate.m in Sources */,
-				C4E54D5924E276FB00165258 /* IAdIdProvider.m in Sources */,
-				C4E54D7724E276FB00165258 /* BUViewController.m in Sources */,
-				C4E54D7924E276FB00165258 /* MSPidModel.m in Sources */,
-				C4E54D6624E276FB00165258 /* MSFeedViewController.m in Sources */,
-				C4E54D7424E276FB00165258 /* MSViewController.m in Sources */,
-				C4E54D6924E276FB00165258 /* MSVideoAdViewController.m in Sources */,
-				C4E54D7824E276FB00165258 /* MSDemoSplashViewController.m in Sources */,
-				C4E54D5D24E276FB00165258 /* GDTIdProvider.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				C4E54D5E24E276FB00165258 /* BUIdProvider.m in Sources */,
-				C4E54D5A24E276FB00165258 /* DNAdIdProvider.m in Sources */,
-				C4E54D7624E276FB00165258 /* GDTViewController.m in Sources */,
-				C4E54D6824E276FB00165258 /* FeedVideoView.m in Sources */,
-				C4E54D5C24E276FB00165258 /* IdProviderFactory.m in Sources */,
-				C4E54D6F24E276FB00165258 /* MSBannerViewController.m in Sources */,
-				C4E54D6424E276FB00165258 /* MSRewardVideoViewController.m in Sources */,
-				C4E54D7324E276FB00165258 /* DNViewController.m in Sources */,
-				C4E54D6724E276FB00165258 /* MSFeedListViewController.m in Sources */,
-				C4E54D5F24E276FB00165258 /* MSDefaultSet.m in Sources */,
-				C4E54D5824E276FB00165258 /* BDIdProvider.m in Sources */,
-				C4E54D6324E276FB00165258 /* MSInterstitialViewController.m in Sources */,
-				C4E54D6024E276FB00165258 /* HomeViewController.m in Sources */,
-				C4E54D6B24E276FB00165258 /* MSPrerenderCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

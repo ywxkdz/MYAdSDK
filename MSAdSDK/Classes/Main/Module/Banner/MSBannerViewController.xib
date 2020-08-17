@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MSBannerViewController">
+            <connections>
+                <outlet property="containView" destination="5XE-uP-b3x" id="9Ya-FS-cwY"/>
+                <outlet property="defaultPidTF" destination="A5T-xI-QT0" id="uRQ-Fe-Gih"/>
+                <outlet property="showCloseBtn" destination="LIf-Gk-fYR" id="7py-fX-tsk"/>
+                <outlet property="showCloseSwitch" destination="eyh-8z-SWI" id="0LH-LR-cE4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5XE-uP-b3x">
+                    <rect key="frame" x="57" y="54" width="300" height="75"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="8xH-CY-rUW"/>
+                        <constraint firstAttribute="height" constant="75" id="Wbp-0M-8Dt"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A5T-xI-QT0">
+                    <rect key="frame" x="30" y="159" width="354" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="PJy-mz-q3Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIf-Gk-fYR">
+                    <rect key="frame" x="57" y="754" width="300" height="48"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="隐藏关闭按钮" backgroundImage="ms_longButton">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" title="显示关闭按钮"/>
+                    <state key="highlighted">
+                        <color key="titleColor" systemColor="linkColor"/>
+                    </state>
+                    <connections>
+                        <action selector="showOrHideCloseBtn:" destination="-1" eventType="touchUpInside" id="MBs-3J-eJI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8W-UQ-bM8">
+                    <rect key="frame" x="57" y="676" width="300" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="9sb-u2-qkV"/>
+                        <constraint firstAttribute="width" constant="300" id="T1u-BO-Ghc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="移除广告" backgroundImage="ms_longButton">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" systemColor="linkColor"/>
+                    </state>
+                    <connections>
+                        <action selector="removeBannerAd:" destination="-1" eventType="touchUpInside" id="ool-oB-3Z3"/>
+                    </connections>
+                </button>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eyh-8z-SWI">
+                    <rect key="frame" x="182.5" y="432.5" width="51" height="31"/>
+                    <connections>
+                        <action selector="switchChanged:" destination="-1" eventType="valueChanged" id="AcV-KJ-lvB"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否显示关闭按钮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8V-bo-65V">
+                    <rect key="frame" x="150" y="483.5" width="114.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aD-ky-M9O">
+                    <rect key="frame" x="57" y="598" width="300" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="4po-CE-j1f"/>
+                        <constraint firstAttribute="width" constant="300" id="X1z-uf-8d7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="展示广告" backgroundImage="ms_longButton">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" systemColor="linkColor"/>
+                    </state>
+                    <connections>
+                        <action selector="showBannerAd:" destination="-1" eventType="touchUpInside" id="USk-MV-5iX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1aD-ky-M9O" firstAttribute="leading" secondItem="v8W-UQ-bM8" secondAttribute="leading" id="5Do-12-eWJ"/>
+                <constraint firstItem="v8W-UQ-bM8" firstAttribute="top" secondItem="1aD-ky-M9O" secondAttribute="bottom" constant="30" id="5Oh-fJ-x6C"/>
+                <constraint firstItem="LIf-Gk-fYR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5p1-ey-z34"/>
+                <constraint firstItem="A5T-xI-QT0" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="7QC-wq-gKu"/>
+                <constraint firstItem="eyh-8z-SWI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="B4V-WD-Tf5"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="LIf-Gk-fYR" secondAttribute="bottom" constant="60" id="DN5-Q2-Qjz"/>
+                <constraint firstItem="1aD-ky-M9O" firstAttribute="height" secondItem="v8W-UQ-bM8" secondAttribute="height" id="HD4-Aa-aOz"/>
+                <constraint firstItem="LIf-Gk-fYR" firstAttribute="trailing" secondItem="v8W-UQ-bM8" secondAttribute="trailing" id="Iod-9P-reP"/>
+                <constraint firstItem="1aD-ky-M9O" firstAttribute="trailing" secondItem="v8W-UQ-bM8" secondAttribute="trailing" id="MbU-ZP-oZQ"/>
+                <constraint firstItem="5XE-uP-b3x" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="WAM-KC-CuE"/>
+                <constraint firstItem="A5T-xI-QT0" firstAttribute="top" secondItem="5XE-uP-b3x" secondAttribute="bottom" constant="30" id="XH6-Of-1gw"/>
+                <constraint firstItem="LIf-Gk-fYR" firstAttribute="leading" secondItem="v8W-UQ-bM8" secondAttribute="leading" id="YNV-Dw-8FP"/>
+                <constraint firstItem="R8V-bo-65V" firstAttribute="top" secondItem="eyh-8z-SWI" secondAttribute="bottom" constant="20" id="ZxB-qs-eeX"/>
+                <constraint firstItem="LIf-Gk-fYR" firstAttribute="top" secondItem="v8W-UQ-bM8" secondAttribute="bottom" constant="30" id="dNa-iy-bt0"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="A5T-xI-QT0" secondAttribute="trailing" constant="30" id="eHU-J9-8uF"/>
+                <constraint firstItem="eyh-8z-SWI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tfD-QT-KNV"/>
+                <constraint firstItem="5XE-uP-b3x" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wYi-At-jpS"/>
+                <constraint firstItem="R8V-bo-65V" firstAttribute="centerX" secondItem="eyh-8z-SWI" secondAttribute="centerX" id="xvo-L8-tvZ"/>
+                <constraint firstItem="LIf-Gk-fYR" firstAttribute="height" secondItem="v8W-UQ-bM8" secondAttribute="height" id="zIp-GM-iv9"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="145"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ms_longButton" width="300" height="48"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

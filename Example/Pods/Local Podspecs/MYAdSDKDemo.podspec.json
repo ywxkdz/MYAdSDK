@@ -1,0 +1,25 @@
+{
+  "name": "MYAdSDKDemo",
+  "version": "0.0.2",
+  "summary": "Mobile AD SDK DEMO For iOS.",
+  "homepage": "https://github.com/adxdata/MSMobAdSDK-iOS",
+  "license": "MIT",
+  "authors": {
+    "Lei Dai": "534219838@qq.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/ywxkdz/MYAdSDK.git",
+    "tag": "0.0.2"
+  },
+  "source_files": "MSAdSDK/Classes/**/*.{h,m}",
+  "static_framework": true,
+  "prefix_header_file": "MSAdSDK/Classes/Common/PrefixHeader.pch",
+  "dependencies": {
+    "MYAdSDK": [
+
+    ]
+  }
+}

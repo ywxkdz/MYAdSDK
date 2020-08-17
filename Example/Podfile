@@ -4,7 +4,7 @@ platform :ios, '9.0'
 
 target 'MSAdSDK_Example' do
   
-  pod 'MYAdSDK', :path => '../'
+  pod 'MYAdSDKDemo', :path => '../'
 
   # pod 'GDTMobSDK'
   #穿山甲
