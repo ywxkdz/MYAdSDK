@@ -1,2 +1,0 @@
-# MYAdSDK
-MSSDK Test
