@@ -114,5 +114,5 @@ typedef NS_ENUM(NSInteger, MSTargetType) {
 typedef enum : NSUInteger {
     MSLogNone,  //不打印Log
     MSLogError, //只打印Error
-    MSLogInAll  //全部打印
+    MSLogAll  //全部打印
 } MSLogLevel;

@@ -28,6 +28,15 @@
  */
 - (void)msInterstitialError:(MSInterstitialAd *)msInterstitialAd error:(NSError *)error;
 
+
+/**
+*  平台广告失败回调
+*
+*/
+
+- (void)msInterstitialPlatformError:(MSShowType)platform
+                                 ad: (MSInterstitialAd *)msInterstitialAd
+                              error:(NSError *)error;
 /**
  *  插屏广告视图展示成功回调
  *  详解: 插屏广告展示成功回调该函数

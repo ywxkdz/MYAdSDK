@@ -36,9 +36,16 @@
 - (void)msSplashShow:(MSSplashAd *)splashAd;
 
 /**
- *  开屏广告展示失败
+ *  开屏广告失败
  */
 - (void)msSplashError:(MSSplashAd *)splashAd withError:(NSError *)error;
+
+/**
+*  平台Error
+*/
+-(void) msSplashPlatformError:(MSShowType)platform
+                     splashAd:(MSSplashAd *)splashAd
+                        Error:(NSError*)error;
 
 /**
  *  开屏广告点击回调

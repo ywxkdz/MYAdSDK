@@ -62,6 +62,17 @@
  */
 - (void)msRewardVideoError:(MSRewardVideoAd *)msRewardVideoAd error:(NSError *)error;
 
+
+/**
+ 视频广告各种错误信息回调
+ 
+ @param msRewardVideoAd MSRewardVideoAd 实例
+ @param platform 广告平台
+ @param error 具体错误信息
+ */
+
+- (void)msRewardVideoPlatformError:(MSRewardVideoAd *)msRewardVideoAd  platform:(MSShowType)platform error:(NSError *)error;
+
 /**
  视频广告播放达到激励条件回调
  

@@ -26,6 +26,12 @@
 - (void)msNativeError:(NSError *)error;
 
 /**
+*  原生广告加载广告 平台数据失败回调
+*/
+
+- (void)msNativePlatformError:(MSShowType)platform error: (NSError *)error;
+
+/**
  *  原生广告即将展现
  */
 - (void)msNativeShow:(id<MSFeedAdMeta>)feedAdData;

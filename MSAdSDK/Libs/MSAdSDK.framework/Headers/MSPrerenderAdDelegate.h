@@ -29,6 +29,12 @@
 - (void)msPrerenderError:(MSPrerenderAd *)prerenderAd error:(NSError *)error;
 
 /**
+*  请求平台广告条数据失败后调用
+*  详解:当接收服务器返回的广告数据失败后调用该函数
+*/
+- (void)msPrerenderPlatformError:(MSShowType)platform ad:(MSPrerenderAd *)prerenderAd error:(NSError *)error;
+
+/**
  *  广告视图渲染成功
  *  详解:广告视图渲染成功后调用该函数
  */
