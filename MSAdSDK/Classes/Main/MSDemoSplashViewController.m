@@ -8,8 +8,6 @@
 
 #import "MSDemoSplashViewController.h"
 #import "IdProviderFactory.h"
-#import <MSAdSDK/MSAdSDK.h>
-
 
 @interface MSDemoSplashViewController ()<MSSplashAdDelegate>
 

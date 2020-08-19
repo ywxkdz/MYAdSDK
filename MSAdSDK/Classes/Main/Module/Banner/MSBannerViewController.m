@@ -7,20 +7,13 @@
 //
 
 #import "MSBannerViewController.h"
-#import <MSAdSDK/MSAdSDK.h>
-
 
 @interface MSBannerViewController ()<MSBannerViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIView *containView;
-
-@property (weak, nonatomic) IBOutlet UITextField *defaultPidTF;
-
-@property (weak, nonatomic) IBOutlet UISwitch *showCloseSwitch;
-
-@property(nonatomic,strong) MSBannerView *bannerView;
-
-@property (weak, nonatomic) IBOutlet UIButton *showCloseBtn;
+@property (strong, nonatomic)  UIView *containView;
+@property (strong, nonatomic)  UITextField  *defaultPidTF;
+@property(nonatomic,strong)    MSBannerView *bannerView;
+@property (strong, nonatomic)  UIButton     *showCloseBtn;
 
 
 @end
@@ -30,11 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setUpView];
     self.defaultPidTF.text = self.defaultPid;
-    self.containView.layer.borderWidth = 0.5;
-    self.containView.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    self.containView.layer.cornerRadius    = 3;
-    self.containView.layer.masksToBounds   = YES;
+    self.showCloseBtn.selected = YES;
     
 }
 -(MSBannerView *)bannerView{
@@ -44,31 +35,23 @@
     }
     return _bannerView;
 }
-- (IBAction)showBannerAd:(id)sender {
+- (void)showBannerAd:(id)sender {
     
-    self.bannerView.showCloseBtn = self.showCloseSwitch.isOn;
     NSString *pid = self.defaultPidTF.text.length ? self.defaultPidTF.text : self.defaultPid;
     self.bannerView.delegate = self;
     [self.bannerView loadAdAndShow:self pid:pid];
 }
 
-- (IBAction)removeBannerAd:(id)sender {
+- (void)removeBannerAd:(id)sender {
     
     [self.bannerView dismiss];
-
-}
-
-- (IBAction)switchChanged:(UISwitch *)sender {
-    
-    self.showCloseBtn.selected = sender.isOn;
+    self.bannerView = nil;
     
 }
-
-- (IBAction)showOrHideCloseBtn:(UIButton*)sender {
+- (void)showOrHideCloseBtn:(UIButton*)sender {
     
     sender.selected = !sender.selected;
     self.bannerView.showCloseBtn = !sender.selected;
-    [self.showCloseSwitch setOn:!sender.selected animated:YES];
     
 }
 -(void)msBannerShow:(MSBannerView *)msBannerAd{
@@ -90,7 +73,102 @@
 -(void)msBannerError:(MSBannerView *)msBannerAd error:(NSError *)error{
     
 }
+
+
+-(void)msBannerPlatformError:(MSShowType)platform
+                    bannerAd:(MSBannerView *)msBannerAd
+                       error:(NSError *)error{
+    
+}
+
 -(void)msBannerDetailClosed:(MSBannerView *)msBannerAd{
     
 }
+
+#pragma mark -SetUpView
+
+-(void) setUpView{
+    
+    self.containView  = [[UIView alloc]initWithFrame:CGRectZero];
+    self.containView.layer.borderWidth   = 0.5;
+    self.containView.layer.borderColor   = [UIColor lightGrayColor].CGColor;
+    self.containView.layer.cornerRadius  = 3;
+    self.containView.layer.masksToBounds = YES;
+    [self.view addSubview:self.containView];
+    
+    self.defaultPidTF = [MSQuickCreate defaultPidTextField];
+    [self.view addSubview:self.defaultPidTF];
+    
+    UIButton * showBtn = [MSQuickCreate longActionBtn];
+    [showBtn setTitle:@"展示广告" forState:UIControlStateNormal];
+    [showBtn addTarget:self
+                action:@selector(showBannerAd:)
+      forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:showBtn];
+    
+    
+    UIButton * removeBtn = [MSQuickCreate longActionBtn];
+    [removeBtn setTitle:@"移除广告" forState:UIControlStateNormal];
+    [removeBtn addTarget:self
+                  action:@selector(removeBannerAd:)
+        forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:removeBtn];
+    
+    
+    UIButton * showCloseBtn = [MSQuickCreate longActionBtn];
+    [showCloseBtn setTitle:@"显示 关闭按钮" forState:UIControlStateSelected];
+    [showCloseBtn setTitle:@"隐藏 关闭按钮" forState:UIControlStateNormal];
+    [showCloseBtn addTarget:self
+                     action:@selector(showOrHideCloseBtn:)
+           forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:showCloseBtn];
+    self.showCloseBtn = showCloseBtn;
+    
+    
+    [self.containView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.offset(100);
+        make.width.equalTo(@300);
+        make.height.equalTo(@75);
+        make.centerX.offset(0);
+        
+    }];
+    
+    [self.defaultPidTF mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.height.equalTo(@48);
+        make.leading.offset(20);
+        make.trailing.offset(-20);
+        
+    }];
+    
+    [showBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.height.equalTo(@48);
+        make.leading.offset(20);
+        make.trailing.offset(-20);
+        make.top.equalTo(self.defaultPidTF.mas_bottom).offset(20);
+        
+    }];
+    
+    [removeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.height.equalTo(@48);
+        make.leading.offset(20);
+        make.trailing.offset(-20);
+        make.top.equalTo(showBtn.mas_bottom).offset(20);
+        
+    }];
+    
+    [self.showCloseBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.height.equalTo(@48);
+        make.leading.offset(20);
+        make.trailing.offset(-20);
+        make.bottom.offset(-60);
+        make.top.equalTo(removeBtn.mas_bottom).offset(20);
+        
+    }];
+}
+
 @end

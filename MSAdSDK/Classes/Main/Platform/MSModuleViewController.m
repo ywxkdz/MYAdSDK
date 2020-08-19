@@ -86,9 +86,10 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     MSPidModel *model    =  self.dataArray[indexPath.section];
-    Class cls            =  NSClassFromString(model.vc);
     
-    MSBaseAdViewController *vc =  [[cls alloc]init];
+    Class cls = NSClassFromString(model.vc);
+    MSBaseAdViewController *vc = [[cls alloc]init];
+    
     vc.defaultPid        = model.pid;
     vc.title             = model.moduleName;
     vc.platform          = self.platformName;

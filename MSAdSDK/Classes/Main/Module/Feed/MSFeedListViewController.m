@@ -178,6 +178,11 @@
     
 }
 
+-(void)msNativePlatformError:(MSShowType)platform
+                       error:(NSError *)error{
+    
+}
+
 - (void)msNativeShow:(MSFeedAdData *)feedAdData{
     
 }

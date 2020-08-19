@@ -10,12 +10,9 @@
 
 @interface MSSplashViewController ()<MSSplashAdDelegate>
 
-@property (weak, nonatomic) IBOutlet UITextField *pidTextField;
-
-@property (weak, nonatomic) IBOutlet UILabel *instructionsLabel;
+@property (strong, nonatomic)  UITextField *defaultPidTF;
 
 @property(nonatomic,strong) MSSplashAd *splash;
-
 
 @end
 
@@ -24,17 +21,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.pidTextField.placeholder = self.defaultPid;
-    self.pidTextField.text        = self.defaultPid;
+    [self setUpView];
+    
+    self.defaultPidTF.placeholder = self.defaultPid;
+    self.defaultPidTF.text        = self.defaultPid;
     
 }
 
-- (IBAction)clickLoadFull:(UIButton*)sender{
+- (void)clickLoadFull:(UIButton*)sender{
     
     MSSplashAd *splash = [[MSSplashAd alloc]init];
     self.splash     = splash;
     splash.delegate = self;
-    NSString *pid   = self.pidTextField.text.length ? self.pidTextField.text:self.defaultPid;
+    NSString *pid   = self.defaultPidTF.text.length ? self.defaultPidTF.text:self.defaultPid;
     
     [self.splash loadAdAndShowSplashAd:pid];
     
@@ -44,12 +43,12 @@
     });
 }
 
-- (IBAction)clickLoadHalf:(UIButton*)sender{
+- (void)clickLoadHalf:(UIButton*)sender{
     
     MSSplashAd *splash = [[MSSplashAd alloc]init];
     self.splash = splash;
     splash.delegate   = self;
-    NSString *pid   = self.pidTextField.text.length ? self.pidTextField.text:self.defaultPid;
+    NSString *pid   = self.defaultPidTF.text.length ? self.defaultPidTF.text:self.defaultPid;
     splash.bottomView = [self bottomView];
     
     [self.splash loadAdAndShowSplashAd:pid];
@@ -61,7 +60,7 @@
     CGFloat screenWidth  = [UIScreen mainScreen].bounds.size.width;
     CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
     
-    UIView * bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, screenHeight * 0.25)];
+    UIView * bottomView  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, screenHeight * 0.25)];
     bottomView.backgroundColor = UIColor.whiteColor;
     
     UIImage *image = [UIImage imageNamed:@"logo"];
@@ -94,6 +93,13 @@
     
 }
 
+-(void)msSplashPlatformError:(MSShowType)platform
+                    splashAd:(MSSplashAd *)splashAd
+                       Error:(NSError *)error{
+    
+    
+}
+
 - (void)msSplashLoaded:(MSSplashAd *)splashAd {
     
 }
@@ -117,5 +123,61 @@
 - (void)msSplashStartLoaded:(MSSplashAd *)splashAd {
     
 }
+
+
+
+
+#pragma mark -SetUpView
+
+-(void) setUpView{
+    
+    self.defaultPidTF = [MSQuickCreate defaultPidTextField];
+    [self.view addSubview:self.defaultPidTF];
+    
+    UIButton * fullBtn = [MSQuickCreate longActionBtn];
+    [fullBtn setTitle:@"全屏展示" forState:UIControlStateNormal];
+    [fullBtn addTarget:self
+                action:@selector(clickLoadFull:)
+      forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:fullBtn];
+    
+    
+    UIButton * halfBtn = [MSQuickCreate longActionBtn];
+    [halfBtn setTitle:@"半屏展示" forState:UIControlStateNormal];
+    [halfBtn addTarget:self
+              action:@selector(clickLoadHalf:)
+    forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:halfBtn];
+    
+    
+    [self.defaultPidTF mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.height.equalTo(@48);
+        make.leading.offset(20);
+        make.trailing.offset(-20);
+    }];
+    
+    [fullBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.height.equalTo(@48);
+        make.leading.offset(20);
+        make.trailing.offset(-20);
+        make.top.equalTo(self.defaultPidTF.mas_bottom).offset(20);
+        
+    }];
+    
+    [halfBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.height.equalTo(@48);
+        make.leading.offset(20);
+        make.trailing.offset(-20);
+        make.bottom.offset(-60);
+        make.top.equalTo(fullBtn.mas_bottom).offset(20);
+        
+    }];
+}
+
+
+
 
 @end

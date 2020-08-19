@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name        = 'MYAdSDKDemo'
-s.version     = '0.0.2'
+s.version     = '0.0.10'
 s.summary     = 'Mobile AD SDK DEMO For iOS.'
 s.homepage    = 'https://github.com/adxdata/MSMobAdSDK-iOS'
 s.license     = 'MIT'
@@ -13,8 +13,7 @@ s.source_files = 'MSAdSDK/Classes/**/*.{h,m}'
 
 s.static_framework     = true
 
-s.prefix_header_file = 'MSAdSDK/Classes/Common/PrefixHeader.pch'
-
+s.prefix_header_file = 'MSAdSDK/Classes/Header/PrefixHeader.pch'
 
 s.dependency 'MYAdSDK'
 

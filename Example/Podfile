@@ -6,7 +6,7 @@ target 'MSAdSDK_Example' do
   
   pod 'MYAdSDKDemo', :path => '../'
 
-  # pod 'GDTMobSDK'
+   pod 'GDTMobSDK'
   #穿山甲
   # pod 'Bytedance-UnionAD'
 

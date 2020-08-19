@@ -9,14 +9,16 @@
 #import "MSPreRenderViewController.h"
 #import "MSPrerenderCell.h"
 
+
 @interface MSPreRenderViewController ()<MSPrerenderAdDelegate,UITableViewDelegate,UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UITextField *defaultPidTF;
-
 @property(nonatomic,strong)MSPrerenderAd *  prerenderAd;
-@property (weak, nonatomic) IBOutlet UITableView *tableview;
 
 @property(nonatomic,strong) NSArray *dataArray;
+
+@property (strong, nonatomic)  UITextField *defaultPidTF;
+@property (strong, nonatomic)  UIButton    *refreshBtn;
+@property (strong, nonatomic)  UITableView *tableview;
 
 @end
 
@@ -25,10 +27,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.defaultPidTF.text = self.defaultPid;
-    self.tableview.delegate = self;
-    self.tableview.dataSource = self;
-    [self.tableview registerClass:[MSPrerenderCell class] forCellReuseIdentifier:@"MSPrerenderCell"];
+    [self setUpView];
+    self.defaultPidTF.text    = self.defaultPid;
+    
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -57,7 +58,7 @@
     return cell;
 }
 
-- (IBAction)refreshAd:(UIButton *)sender {
+- (void)refreshAd:(UIButton *)sender {
     
     NSString *pid = self.defaultPidTF.text.length ? self.defaultPidTF.text : self.defaultPid;
     MSPrerenderAd *  prerenderAd = [[MSPrerenderAd alloc]initWithCurController:self];
@@ -81,7 +82,6 @@
 - (void)msPrerenderError:(MSPrerenderAd *)prerenderAd
                    error:(NSError *)error{
     
-    
 }
 
 - (void)msPrerenderRenderSuccess:(UIView *)adView {
@@ -90,8 +90,14 @@
 
 - (void)msPrerenderRenderError:(UIView *)adView error:(NSError *)error{
     
+    
 }
 
+-(void)msPrerenderPlatformError:(MSShowType)platform
+                             ad:(MSPrerenderAd *)prerenderAd
+                          error:(NSError *)error{
+    
+}
 
 - (void)msPrerenderShow:(UIView *)adView{
     
@@ -105,6 +111,55 @@
 - (void)msPrerenderClosed:(UIView *)adView{
     self.dataArray = nil;
     [self.tableview reloadData];
+}
+
+
+
+#pragma mark - SetUpView
+
+-(void) setUpView{
+    
+    
+    UITableView *tableview = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+    tableview.delegate   = self;
+    tableview.dataSource = self;
+    [tableview registerClass:[MSPrerenderCell class] forCellReuseIdentifier:@"MSPrerenderCell"];
+    self.tableview = tableview;
+    [self.view addSubview:self.tableview];
+    
+    
+    self.defaultPidTF = [MSQuickCreate defaultPidTextField];
+    [self.view addSubview:self.defaultPidTF];
+    
+    UIButton * loadBtn = [MSQuickCreate longActionBtn];
+    [loadBtn setTitle:@"刷新广告" forState:UIControlStateNormal];
+    [loadBtn addTarget:self
+                action:@selector(refreshAd:)
+      forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:loadBtn];
+    
+    
+    [self.tableview mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.offset(0);
+        make.leading.trailing.offset(0);
+        make.bottom.equalTo(self.defaultPidTF.mas_top).offset(-20);
+    }];
+    
+    [self.defaultPidTF mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.equalTo(@48);
+        make.leading.offset(20);
+        make.trailing.offset(-20);
+    }];
+    
+    [loadBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.height.equalTo(@48);
+        make.leading.offset(20);
+        make.trailing.offset(-20);
+        make.bottom.offset(-60);
+        make.top.equalTo(self.defaultPidTF.mas_bottom).offset(20);
+        
+    }];
 }
 
 
